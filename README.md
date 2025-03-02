@@ -54,6 +54,8 @@ The following images showcase different aspects of the application:
 
 ### Home Screen
 
+Displays featured movies and trending content.
+
 ![Home Screen 1](images/home_1.png)
 ![Home Screen 2](images/home_2.png)
 
