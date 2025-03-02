@@ -1,0 +1,462 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\moviesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\moviesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\viewmodels\\moviesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\viewmodels\\moviesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\daomovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\daomovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\moviesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\moviesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\discovermoviespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\discovermoviespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\services\\discovermoviesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\services\\discovermoviesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\services\\formhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\services\\formhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\moviedetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\moviedetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\addmovietomylist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\addmovietomylist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\viewmodels\\discovermoviesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\viewmodels\\discovermoviesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\viewmodels\\addmovietomylistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\viewmodels\\addmovietomylistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\services\\newswebscrapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\services\\newswebscrapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\services\\moviesuggestionsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\services\\moviesuggestionsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\newsarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\newsarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\movielibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\movielibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\imageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\imageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\filteroption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\filteroption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\daonews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\daonews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\collections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\collections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\models\\booleantocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\models\\booleantocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\viewmodels\\moviedetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\viewmodels\\moviedetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\suggestedmoviespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\suggestedmoviespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\suggestedmoviespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\suggestedmoviespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\moviesuggestionspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\moviesuggestionspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|d:\\ase\\programarea dispozitivelor mobile\\proiect\\proiect_pdm_dinuanamaria_galbinasuanateodora\\cinemate\\cinemate\\views\\discovermoviespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB258BF8-D058-4DBE-B650-55E5A6632800}|Cinemate\\Cinemate.csproj|solutionrelative:cinemate\\views\\discovermoviespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoviesView.xaml.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\MoviesView.xaml.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\MoviesView.xaml.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\MoviesView.xaml.cs",
+              "RelativeToolTip": "Cinemate\\Views\\MoviesView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:29:00.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DiscoverMoviesAPI.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Services\\DiscoverMoviesAPI.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Services\\DiscoverMoviesAPI.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Services\\DiscoverMoviesAPI.cs",
+              "RelativeToolTip": "Cinemate\\Services\\DiscoverMoviesAPI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:22.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DiscoverMoviesPage.xaml",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\DiscoverMoviesPage.xaml",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\DiscoverMoviesPage.xaml",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\DiscoverMoviesPage.xaml",
+              "RelativeToolTip": "Cinemate\\Views\\DiscoverMoviesPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T11:48:40.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MoviesViewModel.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\ViewModels\\MoviesViewModel.cs",
+              "RelativeDocumentMoniker": "Cinemate\\ViewModels\\MoviesViewModel.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\ViewModels\\MoviesViewModel.cs",
+              "RelativeToolTip": "Cinemate\\ViewModels\\MoviesViewModel.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAqwDMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:07:12.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddMovieToMyList.xaml",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\AddMovieToMyList.xaml",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\AddMovieToMyList.xaml",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\AddMovieToMyList.xaml",
+              "RelativeToolTip": "Cinemate\\Views\\AddMovieToMyList.xaml",
+              "ViewState": "AQIAACUAAAAAAAAAAAAtwDIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T11:49:54.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoviesView.xaml",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\MoviesView.xaml",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\MoviesView.xaml",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\MoviesView.xaml",
+              "RelativeToolTip": "Cinemate\\Views\\MoviesView.xaml",
+              "ViewState": "AQIAAE0AAAAAAAAAAIBZwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T11:49:44.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DaoMovie.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\DaoMovie.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\DaoMovie.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\DaoMovie.cs",
+              "RelativeToolTip": "Cinemate\\Models\\DaoMovie.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAkwFMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:02:43.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormHandler.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Services\\FormHandler.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Services\\FormHandler.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Services\\FormHandler.cs",
+              "RelativeToolTip": "Cinemate\\Services\\FormHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:29.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MovieDetailView.xaml",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\MovieDetailView.xaml",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\MovieDetailView.xaml",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\MovieDetailView.xaml",
+              "RelativeToolTip": "Cinemate\\Views\\MovieDetailView.xaml",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAtwKcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T11:28:08.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MovieSuggestionsAPI.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Services\\MovieSuggestionsAPI.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Services\\MovieSuggestionsAPI.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Services\\MovieSuggestionsAPI.cs",
+              "RelativeToolTip": "Cinemate\\Services\\MovieSuggestionsAPI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:34.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddMovieToMyListViewModel.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\ViewModels\\AddMovieToMyListViewModel.cs",
+              "RelativeDocumentMoniker": "Cinemate\\ViewModels\\AddMovieToMyListViewModel.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\ViewModels\\AddMovieToMyListViewModel.cs",
+              "RelativeToolTip": "Cinemate\\ViewModels\\AddMovieToMyListViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:49.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DiscoverMoviesViewModel.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\ViewModels\\DiscoverMoviesViewModel.cs",
+              "RelativeDocumentMoniker": "Cinemate\\ViewModels\\DiscoverMoviesViewModel.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\ViewModels\\DiscoverMoviesViewModel.cs",
+              "RelativeToolTip": "Cinemate\\ViewModels\\DiscoverMoviesViewModel.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAuwCkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:56.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NewsWebScrapping.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Services\\NewsWebScrapping.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Services\\NewsWebScrapping.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Services\\NewsWebScrapping.cs",
+              "RelativeToolTip": "Cinemate\\Services\\NewsWebScrapping.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:39.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NewsArticle.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\NewsArticle.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\NewsArticle.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\NewsArticle.cs",
+              "RelativeToolTip": "Cinemate\\Models\\NewsArticle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:14.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MovieLibrary.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\MovieLibrary.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\MovieLibrary.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\MovieLibrary.cs",
+              "RelativeToolTip": "Cinemate\\Models\\MovieLibrary.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:09.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\Movie.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\Movie.cs",
+              "RelativeToolTip": "Cinemate\\Models\\Movie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:05.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ImageConverter.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\ImageConverter.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\ImageConverter.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\ImageConverter.cs",
+              "RelativeToolTip": "Cinemate\\Models\\ImageConverter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:03:00.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FilterOption.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\FilterOption.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\FilterOption.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\FilterOption.cs",
+              "RelativeToolTip": "Cinemate\\Models\\FilterOption.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:02:56.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DaoNews.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\DaoNews.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\DaoNews.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\DaoNews.cs",
+              "RelativeToolTip": "Cinemate\\Models\\DaoNews.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:02:51.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Collections.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\Collections.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\Collections.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\Collections.cs",
+              "RelativeToolTip": "Cinemate\\Models\\Collections.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:02:38.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BooleanToColorConverter.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\BooleanToColorConverter.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Models\\BooleanToColorConverter.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Models\\BooleanToColorConverter.cs",
+              "RelativeToolTip": "Cinemate\\Models\\BooleanToColorConverter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T14:02:32.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MovieDetailViewModel.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\ViewModels\\MovieDetailViewModel.cs",
+              "RelativeDocumentMoniker": "Cinemate\\ViewModels\\MovieDetailViewModel.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\ViewModels\\MovieDetailViewModel.cs",
+              "RelativeToolTip": "Cinemate\\ViewModels\\MovieDetailViewModel.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAxwAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T12:33:43.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MovieSuggestionsPage.xaml",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\MovieSuggestionsPage.xaml",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\MovieSuggestionsPage.xaml",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\MovieSuggestionsPage.xaml",
+              "RelativeToolTip": "Cinemate\\Views\\MovieSuggestionsPage.xaml",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAowEYAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T11:23:06.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SuggestedMoviesPage.xaml",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\SuggestedMoviesPage.xaml",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\SuggestedMoviesPage.xaml",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\SuggestedMoviesPage.xaml",
+              "RelativeToolTip": "Cinemate\\Views\\SuggestedMoviesPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T12:13:04.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SuggestedMoviesPage.xaml.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\SuggestedMoviesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\SuggestedMoviesPage.xaml.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\SuggestedMoviesPage.xaml.cs",
+              "RelativeToolTip": "Cinemate\\Views\\SuggestedMoviesPage.xaml.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAIwBQAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T12:13:29.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DiscoverMoviesPage.xaml.cs",
+              "DocumentMoniker": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\DiscoverMoviesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Cinemate\\Views\\DiscoverMoviesPage.xaml.cs",
+              "ToolTip": "D:\\Ase\\Programarea dispozitivelor mobile\\Proiect\\Proiect_PDM_DinuAnaMaria_GalbinasuAnaTeodora\\Cinemate\\Cinemate\\Views\\DiscoverMoviesPage.xaml.cs",
+              "RelativeToolTip": "Cinemate\\Views\\DiscoverMoviesPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T11:44:27.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
