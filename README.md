@@ -1,0 +1,2 @@
+# Cinemate-MovieApp
+ Cinemate is a mobile application built with .NET MAUI, designed for movie enthusiasts. It offers a personalized experience for discovering, managing, and receiving recommendations for movies. The app includes features such as movie discovery, personalized suggestions, news updates from the film industry, and a private collection space for users to organize their favorite movies.
