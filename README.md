@@ -54,10 +54,14 @@ The following images showcase different aspects of the application:
 
 ### Home Screen
 
+Displays featured movies and trending content.
+
 ![Home Screen 1](images/home_1.png)
 ![Home Screen 2](images/home_2.png)
 
 ### Movie Details
+
+Detailed view of a selected movie with description, ratings, and options to add to favorites.
 
 ![Movie Details 1](images/movie_details_1.png)
 ![Movie Details 2](images/movie_details_2.png)
@@ -65,16 +69,22 @@ The following images showcase different aspects of the application:
 
 ### Personalized Recommendations
 
+AI-powered suggestions based on user preferences, ensuring tailored movie discovery.
+
 ![Recommendations 1](images/recommendations_1.png)
 ![Recommendations 2](images/recommendations_2.png)
 
 ### News Section
+
+Real-time updates with the latest news, reviews, and trends from the film industry.
 
 ![News Section 1](images/news_1.png)
 ![News Section 2](images/news_2.png)
 ![News Section 3](images/news_3.png)
 
 ### Custom Movie Collection
+
+A user-created collection where favorite movies can be saved, categorized, and accessed anytime.
 
 ![Custom Collection 1](images/custom_1.png)
 ![Custom Collection 2](images/custom_2.png)
