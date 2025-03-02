@@ -4,7 +4,7 @@
 
 Cinemate is a **mobile application** developed using **.NET MAUI**, designed for movie enthusiasts who want a personalized and seamless way to **discover, manage, and receive recommendations for movies**. This project was developed as a **team collaboration**, bringing together expertise in **mobile development, API integration, and AI-driven recommendations**. 
 
-The app allows users to **browse a vast database of films, stay up to date with the latest industry news, receive AI-generated recommendations**, and organize their movie collection in a dedicated space. With a sleek and **intuitive interface**, Cinemate offers an engaging user experience across **Android, iOS, and Windows**, with a primary focus on optimizing the application for **Android and Windows** platforms..
+The app allows users to **browse a vast database of films, stay up to date with the latest industry news, receive AI-generated recommendations**, and organize their movie collection in a dedicated space. With a sleek and **intuitive interface**, Cinemate offers an engaging user experience across **Android, iOS, and Windows**, with a primary focus on optimizing the application for **Android and Windows** platforms.
 
 ## Features
 
