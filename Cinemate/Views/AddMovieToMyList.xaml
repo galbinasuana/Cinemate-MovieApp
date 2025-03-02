@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cinemate.Views.AddMovieToMyList"
+             Shell.NavBarIsVisible="False"
+             xmlns:templates="clr-namespace:Cinemate.Views.Templates"
+             xmlns:viewmodels="clr-namespace:Cinemate.ViewModels"
+             xmlns:Component="clr-namespace:Cinemate.Views.Components"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="AddMovieToMyList">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="BackgroundColor">#EEF1FF</Color>
+            <Color x:Key="Primary">#7B65EC</Color>
+            <Color x:Key="Secondary">#EEF1FF</Color>
+            <Color x:Key="Tertiary">#9399C3</Color>
+            <Color x:Key="Accent">#FFA722</Color>
+
+            <Style x:Key="GoBackIconStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="23" />
+                <Setter Property="WidthRequest" Value="23" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="SubmitIconStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="WidthRequest" Value="50" />
+            </Style>
+
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="HeightRequest" Value="730"/>
+                <Setter Property="WidthRequest" Value="360"/>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Margin" Value="6,-15,6,0"/>
+            </Style>
+
+            <Style x:Key="RatingIconStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="24" />
+                <Setter Property="WidthRequest" Value="24" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid
+        RowDefinitions="60,Auto">
+        <Path
+            Grid.Row="0"
+            Data="M 211.5157012939453 506.2601013183594 L 211.5157012939453 154.91004943847656 L 652.75048828125 154.91004943847656 L 652.75048828125 500.3701171875 C 506.6836853027344 594.9873657226562 359.6053771972656 596.95068359375 211.5157012939453 506.2601013183594 Z "
+            Aspect="Fill"
+            Fill="{StaticResource Tertiary}"
+            Stroke="{StaticResource Tertiary}"
+            Margin="0,0,0,-370"/>
+
+        <Image
+            Grid.Row="0"
+            Source="arrow_left1.png"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Margin="10,10,0,0"
+            Style="{StaticResource GoBackIconStyle}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:AddMovieToMyListViewModel}}, Path=GoBackCommand}"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Frame
+            Grid.Row="1"
+            BorderColor="{x:Null}"
+            Style="{StaticResource FrameStyle}">
+            <Grid
+                RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+                <!-- GENRE -->
+                <Grid
+                    Grid.Row="0"
+                    Margin="0,10,0,0"
+                    RowDefinitions="Auto,Auto,Auto,Auto"
+                    ColumnDefinitions="Auto,Auto,Auto,Auto"
+                    HorizontalOptions="Center">
+                    <Label
+                        Grid.Row="0"
+                        Text="Genre:"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        FontSize="15"
+                        Margin="0,5,0,5"
+                        FontAttributes="Bold"/>
+                    <Frame Grid.Row="1" Grid.Column="0" Padding="10" Margin="5"
+                           BorderColor="{Binding CategorySelections[Action], Converter={StaticResource BooleanToColorConverter}}"
+                           BackgroundColor="Transparent"
+                           HasShadow="False"
+                           CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="action.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Action"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Action"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="1" Padding="10" Margin="5"
+                           BorderColor="{Binding CategorySelections[Adventure], Converter={StaticResource BooleanToColorConverter}}"
+                           BackgroundColor="Transparent"
+                           HasShadow="False"
+                           CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="adventure.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Adventure"
+                                HorizontalOptions="CenterAndExpand"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Adventure"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="2" Padding="10" Margin="5"
+                               BorderColor="{Binding CategorySelections[Animation], Converter={StaticResource BooleanToColorConverter}}"
+                               BackgroundColor="Transparent"
+                               HasShadow="False"
+                               CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="animation.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Animation"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Animation"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="3" Padding="10" Margin="5"
+                               BorderColor="{Binding CategorySelections[Comedy], Converter={StaticResource BooleanToColorConverter}}"
+                               BackgroundColor="Transparent"
+                               HasShadow="False"
+                               CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="comedy.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Comedy"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Comedy"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="2" Grid.Column="0" Padding="10" Margin="5"
+                               BorderColor="{Binding CategorySelections[Crime], Converter={StaticResource BooleanToColorConverter}}"
+                               BackgroundColor="Transparent"
+                               HasShadow="False"
+                               CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="crime.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Crime"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Crime"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="2" Grid.Column="1" Padding="10" Margin="5"
+                               BorderColor="{Binding CategorySelections[Drama], Converter={StaticResource BooleanToColorConverter}}"
+                               BackgroundColor="Transparent"
+                               HasShadow="False"
+                               CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="drama.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Drama"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Drama"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="2" Grid.Column="2" Padding="10" Margin="5"
+                               BorderColor="{Binding CategorySelections[Family], Converter={StaticResource BooleanToColorConverter}}"
+                               BackgroundColor="Transparent"
+                               HasShadow="False"
+                               CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="family.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Family"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Family"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="2" Grid.Column="3" Padding="10" Margin="5"
+                           BorderColor="{Binding CategorySelections[History], Converter={StaticResource BooleanToColorConverter}}"
+                           BackgroundColor="Transparent"
+                           HasShadow="False"
+                           CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="history.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="History"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="History"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="3" Grid.Column="0" Padding="10" Margin="5"
+                           BorderColor="{Binding CategorySelections[Horror], Converter={StaticResource BooleanToColorConverter}}"
+                           BackgroundColor="Transparent"
+                           HasShadow="False"
+                           CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="horror.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Horror"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Horror"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="3" Grid.Column="1" Padding="10" Margin="5"
+                           BorderColor="{Binding CategorySelections[Music], Converter={StaticResource BooleanToColorConverter}}"
+                           BackgroundColor="Transparent"
+                           HasShadow="False"
+                           CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="music.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Music"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Music"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="3" Grid.Column="2" Padding="10" Margin="5"
+                           BorderColor="{Binding CategorySelections[Mystery], Converter={StaticResource BooleanToColorConverter}}"
+                           BackgroundColor="Transparent"
+                           HasShadow="False"
+                           CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="mystery.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Mystery"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Mystery"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="3" Grid.Column="3" Padding="10" Margin="5"
+                           BorderColor="{Binding CategorySelections[Romance], Converter={StaticResource BooleanToColorConverter}}"
+                           BackgroundColor="Transparent"
+                           HasShadow="False"
+                           CornerRadius="5">
+                        <StackLayout Orientation="Vertical">
+                            <Image
+                                Source="romance.png"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                Margin="0,0,0,2"/>
+                            <Label
+                                Text="Romance"
+                                HorizontalOptions="Center"
+                                FontSize="11"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCategoryCommand}" CommandParameter="Romance"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </Grid>
+
+                <Grid
+                    Grid.Row="1"
+                    Margin="0,5,0,0">
+                    <Line X2="500" StrokeDashArray="4, 2" StrokeDashOffset="0"
+                          StrokeThickness="2.5" Stroke="{StaticResource Gray100}"
+                          HeightRequest="1"/>
+                    <Path Data="M 1.3285494937249204e-14 216.96859741210938 A 216.96859741210938 216.96859741210938 0 0 1 -3.985648481174761e-14 -216.96859741210938L0 0 Z"
+                          Aspect="Fill" Stroke="{StaticResource Tertiary}" 
+                          Fill="{StaticResource Tertiary}"
+                          WidthRequest="12.5" HeightRequest="25"
+                          HorizontalOptions="End"/>
+                    <Path Data="M -2.8813035263903705e-14 -156.85086059570312 A 156.85086059570312 156.85086059570312 0 0 1 4.802172656921677e-14 156.85086059570312L0 0 Z"
+                           Aspect="Fill" Stroke="{StaticResource Tertiary}" 
+                           Fill="{StaticResource Tertiary}"
+                           WidthRequest="12.5" HeightRequest="25"
+                           HorizontalOptions="Start"/>
+                </Grid>
+                
+                <!--IMAGE | TITLE + STATUS + START DATE + SCORE-->
+                <Grid
+                    Grid.Row="2"
+                    RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+                    <!-- IMAGE -->
+                    <Grid
+                        Grid.Row="0"
+                        Grid.ColumnDefinitions="Auto,Auto">
+                        <Grid
+                            Grid.Column="0"
+                            ColumnDefinitions="Auto,Auto"
+                            RowDefinitions="Auto,Auto,Auto"
+                            Margin="20,25,18,10">
+                            <Label
+                               Grid.Column="0"
+                               Text="Image:"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"
+                               FontSize="15"
+                               FontAttributes="Bold"/>
+                            <Image
+                                Grid.Column="1"
+                                Grid.Row="0"
+                                Source="add_image.png"
+                                HeightRequest="20"
+                                Margin="-20,0,0,0">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding PickImageCommand}"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Frame
+                                Grid.Row="1"  
+                                HeightRequest="100"
+                                WidthRequest="100"
+                                Padding="10" Margin="0,15,0,0"
+                                BorderColor="{StaticResource Gray100}"
+                                BackgroundColor="Transparent"
+                                HasShadow="False"
+                                CornerRadius="5"
+                                HorizontalOptions="Center">
+                                <Image
+                                    Source="{Binding SelectedImageSource}" />
+                            </Frame>
+                        </Grid>
+
+                        <Grid
+                            RowDefinitions="Auto,Auto,Auto,Auto"
+                            Grid.Column="1">
+                            <!-- TITLE -->
+                            <Grid
+                                ColumnDefinitions="Auto,Auto"
+                                HorizontalOptions="Center"
+                                Margin="30,10,0,2">
+                                <Label
+                                    Grid.Column="0"
+                                    Text="Title:"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="Start"
+                                    FontSize="15"
+                                    FontAttributes="Bold"/>
+                                <Frame
+                                    Grid.Column="1"
+                                    HeightRequest="35"
+                                    WidthRequest="130"
+                                    Padding="-5" Margin="5,-8,10,0"
+                                    BorderColor="{StaticResource Gray100}"
+                                    BackgroundColor="Transparent"
+                                    HasShadow="False"
+                                    CornerRadius="5">
+                                    <Entry
+                                        BackgroundColor="Transparent"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Center"
+                                        Text="{Binding Title, Mode=TwoWay}"
+                                        Placeholder="Enter title"/>
+                                </Frame>
+                            </Grid>
+                            <!-- STATUS -->
+                            <Grid
+                                Grid.Row="1"
+                                ColumnDefinitions="Auto,Auto"
+                                HorizontalOptions="Center"
+                                Margin="5,0,0,2">
+                                <Label
+                                    Grid.Column="0"
+                                    Text="Status:"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="Start"
+                                    FontSize="15"
+                                    FontAttributes="Bold"
+                                    Margin="-50,20,2,0"/>
+                                <Component:DropDown
+                                    Options="{Binding MovieOptions}"
+                                    SelectedOption="{Binding SelectedStatus}"
+                                    Margin="5,10,-50,0"                                      
+                                    ColorBorder="{StaticResource Gray100}">
+                                </Component:DropDown>
+                            </Grid>
+                            <!-- START DATE -->
+                            <Grid
+                                Grid.Row="2"
+                                ColumnDefinitions="Auto,Auto"
+                                HorizontalOptions="Center"
+                                Margin="0,0,0,2">
+                                <Label
+                                    Text="Start date:"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="Start"
+                                    FontSize="15"
+                                    FontAttributes="Bold"
+                                    Margin="0,17,0,0"/>
+                                <Frame
+                                    Grid.Column="1" 
+                                    HeightRequest="35"
+                                    WidthRequest="110"
+                                    Padding="-5" Margin="5,10,0,0"
+                                    BorderColor="{StaticResource Gray100}"
+                                    BackgroundColor="Transparent"
+                                    HasShadow="False"
+                                    CornerRadius="5">
+                                    <DatePicker
+                                        Format="dd-MM-yyyy"
+                                        Date="{Binding StartDate, Mode=TwoWay}"
+                                        BackgroundColor="Transparent"
+                                        FontSize="13"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"/>
+                                </Frame>
+                            </Grid>
+                            <!-- SCORE -->
+                            <Grid
+                                Grid.Row="3"
+                                ColumnDefinitions="Auto,Auto,Auto"
+                                HorizontalOptions="Center"
+                                Margin="20,15,0,0">
+                                <Label
+                                    Text="Score:"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="Start"
+                                    FontSize="15"
+                                    FontAttributes="Bold"/>
+                                <Frame
+                                    Grid.Column="1" 
+                                    HeightRequest="35"
+                                    WidthRequest="45"
+                                    Padding="-5" Margin="5,-7,5,0"
+                                    BorderColor="{StaticResource Gray100}"
+                                    BackgroundColor="Transparent"
+                                    HasShadow="False"
+                                    CornerRadius="5">
+                                    <Entry
+                                        BackgroundColor="Transparent"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Center"
+                                        Keyboard="Numeric"
+                                        Text="{Binding Rating, Mode=TwoWay}"
+                                        Placeholder="Score"/>
+                                </Frame>
+                                <Image 
+                                    Grid.Column="2"
+                                    Source="ic_star.png"
+                                    Style="{StaticResource RatingIconStyle}"
+                                    HorizontalOptions="Center"
+                                    Margin="2,-7,0,0"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <Grid
+                    Grid.Row="3"
+                    Margin="0,7,0,0">
+                    <Line X2="500" StrokeDashArray="4, 2" StrokeDashOffset="0"
+                          StrokeThickness="2.5" Stroke="{StaticResource Gray100}"
+                          HeightRequest="1"/>
+                    <Path Data="M 1.3285494937249204e-14 216.96859741210938 A 216.96859741210938 216.96859741210938 0 0 1 -3.985648481174761e-14 -216.96859741210938L0 0 Z"
+                          Aspect="Fill" Stroke="{StaticResource BackgroundColor}" 
+                          Fill="{StaticResource BackgroundColor}"
+                          WidthRequest="12.5" HeightRequest="25"
+                          HorizontalOptions="End"/>
+                    <Path Data="M -2.8813035263903705e-14 -156.85086059570312 A 156.85086059570312 156.85086059570312 0 0 1 4.802172656921677e-14 156.85086059570312L0 0 Z"
+                          Aspect="Fill" Stroke="{StaticResource BackgroundColor}" 
+                          Fill="{StaticResource BackgroundColor}"
+                          WidthRequest="12.5" HeightRequest="25"
+                          HorizontalOptions="Start"/>
+                </Grid>
+
+                <!-- PLOT SUMMARY + MY REVIEW--> 
+                <Grid
+                    Grid.Row="4"
+                    ColumnDefinitions="Auto,Auto"
+                    Margin="20,7,0,0">
+                    <Grid
+                        RowDefinitions="Auto,Auto">
+                        <Label
+                            Text="Plot summary:"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            FontSize="15"
+                            FontAttributes="Bold"/>
+                        <Frame
+                            Grid.Row="1" 
+                            HeightRequest="130"
+                            WidthRequest="150"
+                            Padding="0" Margin="-2,10,0,0"
+                            BorderColor="{StaticResource Gray100}"
+                            BackgroundColor="Transparent"
+                            HasShadow="False"
+                            CornerRadius="5">
+                            <Editor
+                                BackgroundColor="Transparent"
+                                Text="{Binding Summary, Mode=TwoWay}"
+                                Placeholder="Enter plot summary"/>
+                        </Frame>
+                    </Grid>
+                    <Grid
+                        Grid.Column="1"
+                        RowDefinitions="Auto,Auto"
+                        Margin="20,0,0,0">
+                        <Label
+                            Text="My review:"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            FontSize="15"
+                            FontAttributes="Bold"/>
+                        <Frame
+                            Grid.Row="1"
+                            HeightRequest="130"
+                            WidthRequest="155"
+                            Padding="0" Margin="0,10,5,0"
+                            BorderColor="{StaticResource Gray100}"
+                            BackgroundColor="Transparent"
+                            HasShadow="False"
+                            CornerRadius="5">
+                            <Editor
+                                BackgroundColor="Transparent"
+                                Text="{Binding MyReview, Mode=TwoWay}"
+                                Placeholder="Enter your review"/>
+                        </Frame>
+                    </Grid>
+                </Grid>
+
+                <Image 
+                    Source="submit.png"
+                    Grid.Row="5" 
+                    Style="{StaticResource SubmitIconStyle}"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    Margin="0,15,30,0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SubmitMovieCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            
+        </Frame>
+
+    </Grid>
+
+</ContentPage>

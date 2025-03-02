@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cinemate.Views.MoviesView"
+             xmlns:templates="clr-namespace:Cinemate.Views.Templates"
+             xmlns:viewmodels="clr-namespace:Cinemate.ViewModels"
+             xmlns:Component="clr-namespace:Cinemate.Views.Components"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="Movie collection">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="SourceIndicatorColor">#9399C3</Color>
+            <Color x:Key="BackgroundColor">#eef5ff</Color>
+            <Color x:Key="AddButtonColor">#9399C3</Color>
+
+            <Style x:Key="SourceItemStyle" TargetType="Grid">
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColor}" />
+                <Setter Property="Padding" Value="0, 6" />
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter TargetName="SourceText" Property="Label.TextColor" Value="#B9B9C4" />
+                                    <Setter TargetName="SelectedIndicator" Property="BoxView.IsVisible" Value="False" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter TargetName="SourceText" Property="Label.TextColor" Value="#000000" />
+                                    <Setter TargetName="SelectedIndicator" Property="BoxView.IsVisible" Value="True" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <Style x:Key="PaddingContainerStyle" TargetType="Layout">
+                <Setter Property="Padding" Value="20, 0" />
+            </Style>
+
+            <Style x:Key="LeftPaddingContainerStyle" TargetType="Layout">
+                <Setter Property="Padding" Value="20, 0, 0, 0" />
+            </Style>
+
+            <Style x:Key="NavigationIconStyle" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="23" />
+            </Style>
+
+            <Style x:Key="FilterIconStyle" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="20" />
+            </Style>
+
+            <Style x:Key="SourceTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="SourceIndicatorStyle" TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="4" />
+                <Setter Property="WidthRequest" Value="30" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="Color" Value="{StaticResource SourceIndicatorColor}" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="AddButtonStyle" TargetType="Border">
+                <Setter Property="StrokeShape" Value="RoundRectangle 12" />
+                <Setter Property="StrokeThickness" Value="0" />
+                <Setter Property="BackgroundColor" Value="{StaticResource AddButtonColor}" />
+                <Setter Property="HeightRequest" Value="48" />
+                <Setter Property="WidthRequest" Value="48" />
+                <Setter Property="HorizontalOptions" Value="End" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="AddButtonTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Title" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid
+        RowDefinitions="70,50,35,*,Auto">
+        <Grid 
+            Grid.Row="0"
+            Style="{StaticResource LeftPaddingContainerStyle}"
+            Margin="0,20,0,0">
+            <CollectionView
+                ItemsSource="{Binding Sources}"
+                SelectionMode="Single"
+                SelectedItem="{Binding SelectedSource, Mode=TwoWay}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout
+                        Orientation="Horizontal" 
+                        ItemSpacing="40" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            RowDefinitions="*, Auto"
+                            Style="{StaticResource SourceItemStyle}">
+                            <Label 
+                                x:Name="SourceText"
+                                Text="{Binding}"
+                                Style="{StaticResource SourceTextStyle}"/>
+                            <BoxView
+                                x:Name="SelectedIndicator"
+                                Grid.Row="1"
+                                Style="{StaticResource SourceIndicatorStyle}"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <Grid 
+            Grid.Row="1"
+            Style="{StaticResource LeftPaddingContainerStyle}"
+            HorizontalOptions="Center">
+            <CollectionView
+                x:Name="filterCollectionView"
+                ItemsSource="{Binding FilterOptions}"
+                SelectedItem="{Binding SelectFilterSource, Mode=TwoWay}"
+                SelectionMode="Single"
+                Margin="-5, 10, 10, 0">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout
+                        Orientation="Horizontal"
+                        ItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame 
+                            Padding="10"
+                            BorderColor="{Binding IsSelected, Converter={StaticResource BooleanToColorConverter}}">
+                            <Label Text="{Binding Name}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Path=BindingContext.SelectFilterOptionCommand, Source={x:Reference Name=filterCollectionView}}" CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <Grid
+            Grid.Row="2"
+            ColumnDefinitions="*,*,*"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="0,20,0,0">
+            <Image
+                Grid.Column="0"
+                Source="dot.png"
+                HeightRequest="40"
+                WidthRequest="40"
+                Margin="0,5,-10,0"/>
+            <Label
+                Grid.Column="1"
+                Text="{Binding EntriesCount, StringFormat='{0} Entries'}"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"
+                FontAttributes="Bold"
+                TextColor="{StaticResource SourceIndicatorColor}"/>
+            <Image
+                Grid.Column="2"
+                Source="dot.png"
+                HeightRequest="40"
+                WidthRequest="40"
+                Margin="-10,5,0,0"/>
+        </Grid>
+
+        <CarouselView
+            Grid.Row="3"
+            ItemsSource="{Binding FilteredMovies}" 
+            Position="{Binding CarouselPosition, Mode=TwoWay}"
+            PeekAreaInsets="10"
+            Margin="0,25,0,10"
+            Loop="False">
+            <CarouselView.ItemsLayout>
+                <LinearItemsLayout 
+                    SnapPointsAlignment="Center"
+                    SnapPointsType="MandatorySingle"
+                    Orientation="Horizontal"  
+                    ItemSpacing="20" />
+            </CarouselView.ItemsLayout>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="CurrentItem">
+                                    <VisualState.Setters>
+                                        <Setter Property="Rotation" Value="0" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="PreviousItem">
+                                    <VisualState.Setters>
+                                        <Setter Property="Rotation" Value="-10" />
+                                        <Setter Property="Opacity" Value="0.35" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="NextItem">
+                                    <VisualState.Setters>
+                                        <Setter Property="Rotation" Value="10" />
+                                        <Setter Property="Opacity" Value="0.35" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="DefaultItem">
+                                    <VisualState.Setters>
+                                        <Setter Property="Opacity" Value="0.25" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <templates:MovieItemTemplate />
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <Border
+            Grid.Row="4"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0,0,35,30"
+            Style="{StaticResource AddButtonStyle}">
+            <Label
+                Text="+"
+                Style="{StaticResource AddButtonTextStyle}"/>
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding NavigateToAddMoviePageCommand}"/>
+            </Border.GestureRecognizers>
+        </Border>
+
+    </Grid>
+
+</ContentPage>

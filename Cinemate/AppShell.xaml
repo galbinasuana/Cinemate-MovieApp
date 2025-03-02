@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Cinemate.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Cinemate.Views"
+    xmlns:templates="clr-namespace:Cinemate.Views.Templates"
+    Shell.BackgroundColor="#9399C3"
+    Shell.TitleColor="White"
+    Title="Cinemate">
+
+    <ShellContent
+        Title="Intro"
+        ContentTemplate="{DataTemplate local:IntroPage}"
+        Route="IntroPage" />
+
+    <ShellContent
+        Title="About"
+        ContentTemplate="{DataTemplate local:AboutPage}"
+        Route="AboutPage" />
+
+    <ShellContent
+        Title="News"
+        ContentTemplate="{DataTemplate templates:NewsPageTemplate}"
+        Route="NewsPage" />
+
+    <ShellContent
+        Title="Discover movies"
+        ContentTemplate="{DataTemplate local:DiscoverMoviesPage}"
+        Route="DiscoverMoviesPage" />
+
+    <ShellContent
+        Title="Movie suggestions"
+        ContentTemplate="{DataTemplate local:MovieSuggestionsPage}"
+        Route="MovieSuggestionsPage" />
+
+    <ShellContent
+        Title="Movie collection"
+        ContentTemplate="{DataTemplate local:MoviesView}"
+        Route="MoviesView" />
+
+</Shell>

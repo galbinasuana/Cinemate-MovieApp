@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cinemate</name>
+    </assembly>
+    <members>
+        <member name="T:Cinemate.Models.IntroViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:Cinemate.Models.IntroViewModel.loadMoreArtCollection01Command">
+            <summary>The backing field for <see cref="P:Cinemate.Models.IntroViewModel.LoadMoreArtCollection01Command"/>.</summary>
+        </member>
+        <member name="P:Cinemate.Models.IntroViewModel.LoadMoreArtCollection01Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cinemate.Models.IntroViewModel.LoadMoreArtCollection01"/>.</summary>
+        </member>
+        <member name="F:Cinemate.Models.IntroViewModel.loadMoreArtCollection02Command">
+            <summary>The backing field for <see cref="P:Cinemate.Models.IntroViewModel.LoadMoreArtCollection02Command"/>.</summary>
+        </member>
+        <member name="P:Cinemate.Models.IntroViewModel.LoadMoreArtCollection02Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cinemate.Models.IntroViewModel.LoadMoreArtCollection02"/>.</summary>
+        </member>
+        <member name="F:Cinemate.Models.IntroViewModel.loadMoreArtCollection03Command">
+            <summary>The backing field for <see cref="P:Cinemate.Models.IntroViewModel.LoadMoreArtCollection03Command"/>.</summary>
+        </member>
+        <member name="P:Cinemate.Models.IntroViewModel.LoadMoreArtCollection03Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cinemate.Models.IntroViewModel.LoadMoreArtCollection03"/>.</summary>
+        </member>
+        <member name="T:Cinemate.ViewModels.AddMovieToMyListViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.SelectedImageSource">
+            <inheritdoc cref="F:Cinemate.ViewModels.AddMovieToMyListViewModel.selectedImageSource"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.Title">
+            <inheritdoc cref="F:Cinemate.ViewModels.AddMovieToMyListViewModel.title"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.Summary">
+            <inheritdoc cref="F:Cinemate.ViewModels.AddMovieToMyListViewModel.summary"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.MyReview">
+            <inheritdoc cref="F:Cinemate.ViewModels.AddMovieToMyListViewModel.myReview"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.StartDate">
+            <inheritdoc cref="F:Cinemate.ViewModels.AddMovieToMyListViewModel.startDate"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.SelectedStatus">
+            <inheritdoc cref="F:Cinemate.ViewModels.AddMovieToMyListViewModel.selectedStatus"/>
+        </member>
+        <member name="F:Cinemate.ViewModels.AddMovieToMyListViewModel.pickImageCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.AddMovieToMyListViewModel.PickImageCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.PickImageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cinemate.ViewModels.AddMovieToMyListViewModel.PickImage"/>.</summary>
+        </member>
+        <member name="F:Cinemate.ViewModels.AddMovieToMyListViewModel.submitMovieCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.AddMovieToMyListViewModel.SubmitMovieCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.SubmitMovieCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cinemate.ViewModels.AddMovieToMyListViewModel.SubmitMovie"/>.</summary>
+        </member>
+        <member name="F:Cinemate.ViewModels.AddMovieToMyListViewModel.toggleCategoryCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.AddMovieToMyListViewModel.ToggleCategoryCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.ToggleCategoryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Cinemate.ViewModels.AddMovieToMyListViewModel.ToggleCategory(System.String)"/>.</summary>
+        </member>
+        <member name="F:Cinemate.ViewModels.AddMovieToMyListViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.AddMovieToMyListViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.AddMovieToMyListViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cinemate.ViewModels.AddMovieToMyListViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="T:Cinemate.ViewModels.MovieDetailViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Cinemate.ViewModels.MovieDetailViewModel.MovieLibrary">
+            <inheritdoc cref="F:Cinemate.ViewModels.MovieDetailViewModel.movieLibrary"/>
+        </member>
+        <member name="F:Cinemate.ViewModels.MovieDetailViewModel.deleteMovieCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.MovieDetailViewModel.DeleteMovieCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.MovieDetailViewModel.DeleteMovieCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cinemate.ViewModels.MovieDetailViewModel.DeleteMovie"/>.</summary>
+        </member>
+        <member name="F:Cinemate.ViewModels.MovieDetailViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.MovieDetailViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.MovieDetailViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cinemate.ViewModels.MovieDetailViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="T:Cinemate.ViewModels.MoviesViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.CarouselPosition">
+            <inheritdoc cref="F:Cinemate.ViewModels.MoviesViewModel.carouselPosition"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.EntriesCount">
+            <inheritdoc cref="F:Cinemate.ViewModels.MoviesViewModel.entriesCount"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.SelectedSource">
+            <inheritdoc cref="F:Cinemate.ViewModels.MoviesViewModel.selectedSource"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.SelectedMovie">
+            <inheritdoc cref="F:Cinemate.ViewModels.MoviesViewModel.selectedMovie"/>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.SelectedFilterOption">
+            <inheritdoc cref="F:Cinemate.ViewModels.MoviesViewModel.selectedFilterOption"/>
+        </member>
+        <member name="M:Cinemate.ViewModels.MoviesViewModel.OnSelectedSourceChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Cinemate.ViewModels.MoviesViewModel.SelectedSource"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Cinemate.ViewModels.MoviesViewModel.SelectedSource"/> is changed.</remarks>
+        </member>
+        <member name="M:Cinemate.ViewModels.MoviesViewModel.OnSelectedFilterOptionChanged(Cinemate.Models.FilterOption)">
+            <summary>Executes the logic for when <see cref="P:Cinemate.ViewModels.MoviesViewModel.SelectedFilterOption"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Cinemate.ViewModels.MoviesViewModel.SelectedFilterOption"/> is changed.</remarks>
+        </member>
+        <member name="F:Cinemate.ViewModels.MoviesViewModel.selectFilterOptionCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.MoviesViewModel.SelectFilterOptionCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.SelectFilterOptionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Cinemate.ViewModels.MoviesViewModel.SelectFilterOption(Cinemate.Models.FilterOption)"/>.</summary>
+        </member>
+        <member name="F:Cinemate.ViewModels.MoviesViewModel.applyFiltersCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.MoviesViewModel.ApplyFiltersCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.ApplyFiltersCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cinemate.ViewModels.MoviesViewModel.ApplyFilters"/>.</summary>
+        </member>
+        <member name="F:Cinemate.ViewModels.MoviesViewModel.goToDetailsCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.MoviesViewModel.GoToDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.GoToDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Cinemate.ViewModels.MoviesViewModel.GoToDetails(Cinemate.Models.MovieLibrary)"/>.</summary>
+        </member>
+        <member name="F:Cinemate.ViewModels.MoviesViewModel.navigateToAddMoviePageCommand">
+            <summary>The backing field for <see cref="P:Cinemate.ViewModels.MoviesViewModel.NavigateToAddMoviePageCommand"/>.</summary>
+        </member>
+        <member name="P:Cinemate.ViewModels.MoviesViewModel.NavigateToAddMoviePageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cinemate.ViewModels.MoviesViewModel.NavigateToAddMoviePage"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedImageSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedImageSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Summary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Summary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MyReview">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MyReview" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StartDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StartDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedStatus">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedStatus" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MovieLibrary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MovieLibrary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CarouselPosition">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CarouselPosition" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EntriesCount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EntriesCount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedMovie">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedMovie" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedFilterOption">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedFilterOption" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedImageSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedImageSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Summary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Summary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MyReview">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MyReview" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StartDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StartDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedStatus">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedStatus" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MovieLibrary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MovieLibrary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CarouselPosition">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CarouselPosition" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EntriesCount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EntriesCount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedMovie">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedMovie" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedFilterOption">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedFilterOption" generated properties.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cinemate.Views.AboutPage"
+             Shell.NavBarIsVisible="true"
+             BackgroundColor="#EEF5FF"
+             Title="About Cinemate">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Path Grid.Row="0"
+          Data="M 634.9210815429688 114.19229125976562 L 929.1112670898438 114.19229125976562 L 929.1112670898438 162.07949829101562 C 895.9024658203125 166.9908905029297 846.8707275390625 166.9908905029297 782.01611328125 162.07949829101562 C 717.1614990234375 157.16812133789062 668.1298217773438 157.16812133789062 634.9210815429688 162.07949829101562 L 634.9210815429688 114.19229125976562 Z"
+          Aspect="Fill" Fill="#9399C3" Stroke="#9399C3" Margin="0,0,0,-50"/>
+
+        <Image Grid.Row="0" Source="about.png" WidthRequest="250" HeightRequest="250" Margin="10,10,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+        <Frame Grid.Row="1" BackgroundColor="White" BorderColor="#9399C3" HasShadow="True" Padding="20" Margin="20,30,20,10" CornerRadius="20">
+            <ScrollView>
+                <VerticalStackLayout>
+                    <Label Text="Cinemate is dedicated to movie lovers seeking their next film adventure."
+                    FontSize="Medium" TextColor="Black" Margin="0,20,0,0" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="From personalized recommendations to a custom movie library where you can track, comment, and rate your watched movies, Cinemate is here to enhance your movie experience."
+                    FontSize="Medium" TextColor="Black" Margin="0,20,0,0" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Explore, discover and connect with the vast world of cinema right at your fingertips."
+                    FontSize="Medium" TextColor="Black" Margin="0,20,0,0" HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Frame>
+
+        <Path Grid.Row="2"
+            Data="M 634.9210815429688 114.19229125976562 L 929.1112670898438 114.19229125976562 L 929.1112670898438 162.07949829101562 C 895.9024658203125 166.9908905029297 846.8707275390625 166.9908905029297 782.01611328125 162.07949829101562 C 717.1614990234375 157.16812133789062 668.1298217773438 157.16812133789062 634.9210815429688 162.07949829101562 L 634.9210815429688 114.19229125976562 Z"
+            Aspect="Fill" Fill="#9399C3" Stroke="#9399C3" Margin="0,0,0,-50" RotationX="180"/>
+    </Grid>
+</ContentPage>

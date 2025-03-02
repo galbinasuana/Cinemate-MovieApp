@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cinemate.Views.MovieDetailView"
+             xmlns:templates="clr-namespace:Cinemate.Views.Templates"
+             xmlns:viewmodels="clr-namespace:Cinemate.ViewModels"
+             Shell.NavBarIsVisible="False"
+             Title="MovieDetailView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="CoverContainerStyle" TargetType="Border">
+                <Setter Property="StrokeShape" Value="RoundRectangle 100, 0, 24, 24" />
+                <Setter Property="StrokeThickness" Value="0" />
+            </Style>
+
+            <Style x:Key="CoverImageStyle" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFill" />
+            </Style>
+
+            <Style x:Key="BackIconStyle" TargetType="Label">
+                <Setter Property="Margin" Value="12" />
+            </Style>
+
+            <Style x:Key="RatingContainerStyle" TargetType="Border">
+                <Setter Property="StrokeShape" Value="RoundRectangle 48, 0, 48, 0" />
+                <Setter Property="StrokeThickness" Value="0" />
+                <Setter Property="HeightRequest" Value="80" />
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="VerticalOptions" Value="Start" />
+                <Setter Property="Padding" Value="9" />
+                <Setter Property="Margin" Value="14, 160, 0, 0" />
+            </Style>
+
+            <Style x:Key="PaddingContainerStyle" TargetType="Layout">
+                <Setter Property="Padding" Value="20,0, 20, 0" />
+            </Style>
+
+            <Style x:Key="MovieTitleStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
+            <Style x:Key="CategoriesStyle" TargetType="CollectionView">
+                <Setter Property="Margin" Value="0, 12" />
+            </Style>
+
+            <Style x:Key="SectionTitleStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="Margin" Value="0, 20, 0, 0" />
+            </Style>
+
+            <Style x:Key="SummaryTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextColor" Value="DarkGray" />
+                <Setter Property="Margin" Value="0, 10, 0, 15" />
+            </Style>
+
+            <Style x:Key="RatingIconStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="24" />
+                <Setter Property="WidthRequest" Value="24" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="DeleteIconStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="30" />
+                <Setter Property="WidthRequest" Value="30" />
+                <Setter Property="Margin" Value="0,0,-15,25" />
+            </Style>
+
+            <Style x:Key="GoBackIconStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="21" />
+                <Setter Property="WidthRequest" Value="21" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="InfoTitleStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="InfoSubTitleStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="9.5" />
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+
+            <Color x:Key="MetascoreColor">#51CF67</Color>
+
+            <Style x:Key="MetascoreStyle" TargetType="Border">
+                <Setter Property="StrokeShape" Value="Rectangle" />
+                <Setter Property="StrokeThickness" Value="0" />
+                <Setter Property="BackgroundColor" Value="{StaticResource MetascoreColor}" />
+                <Setter Property="HeightRequest" Value="24" />
+                <Setter Property="WidthRequest" Value="24" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="MetascoreTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Micro" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid
+        RowDefinitions="280, Auto, *">
+        <!-- COVER -->
+        <Grid>
+            <Border
+                Style="{StaticResource CoverContainerStyle}">
+                <Image 
+                    Source="{Binding MovieLibrary.CoverImage}"
+                    Style="{StaticResource CoverImageStyle}"/>
+            </Border>
+            <Image
+                Source="arrow_left1.png"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Margin="5,5,0,0"
+                Style="{StaticResource GoBackIconStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MovieDetailViewModel}}, Path=GoBackCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+        <!-- INFO -->
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions="Auto, Auto, Auto, Auto"
+            RowDefinitions="Auto, *"
+            Margin="0, 80, 0, 0"
+            Style="{StaticResource PaddingContainerStyle}">
+            <Label
+                Grid.ColumnSpan="3"
+                Text="{Binding MovieLibrary.Title}"
+                Style="{StaticResource MovieTitleStyle}"/>
+            <CollectionView 
+                Grid.ColumnSpan="4"
+                Grid.Row="2"
+                ItemsSource="{Binding MovieLibrary.Categories}"
+                Style="{StaticResource CategoriesStyle}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout
+                        Orientation="Horizontal"
+                        ItemSpacing="6"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <templates:CategoryItemTemplate />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Image
+                Grid.Column="3"
+                Source="delete.png"
+                Style="{StaticResource DeleteIconStyle}"
+                VerticalOptions="End"
+                HorizontalOptions="End">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding DeleteMovieCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+        <!-- PLOT SUMMARY -->
+        <Grid
+            Grid.Row="2"
+            RowDefinitions="Auto, Auto, Auto, Auto"
+            Style="{StaticResource PaddingContainerStyle}">
+            <Label 
+                Text="Plot Summary"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <ScrollView
+                Grid.Row="1">
+                <Label                   
+                    Text="{Binding MovieLibrary.Summary}"
+                    Style="{StaticResource SummaryTextStyle}"
+                    LineBreakMode="WordWrap"/>
+            </ScrollView>
+            <Label 
+                Grid.Row="2"
+                Text="My Review"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <ScrollView
+                Grid.Row="3">
+                <Label
+                    Text="{Binding MovieLibrary.MyReview}"
+                    Style="{StaticResource SummaryTextStyle}"
+                    LineBreakMode="WordWrap"/>
+            </ScrollView>
+        </Grid>
+        <!-- RATING BANNER -->
+        <Border
+            Grid.Row="0"
+            Grid.RowSpan="4"
+            Style="{StaticResource RatingContainerStyle}"
+            Margin="40,250,0,0">
+            <Border.Shadow>
+                <Shadow 
+                    Opacity="0.5"
+                    Radius="12"
+                    Offset="0, 6"/>
+            </Border.Shadow>
+            <Grid
+                ColumnDefinitions="Auto, *, *, *">
+                <Grid
+                    RowSpacing="0"
+                    RowDefinitions="*, *">
+                    <Image
+                        Source="ic_star.png"
+                        Style="{StaticResource RatingIconStyle}"
+                        HorizontalOptions="Center"
+                        Margin="20,10,10,0"/>
+                    <Label 
+                        Grid.Row="1"
+                        Text="{Binding MovieLibrary.Rating}"
+                        Style="{StaticResource InfoTitleStyle}"
+                        HorizontalOptions="Center"
+                        Margin="20,5,10,0"/>
+                </Grid>
+                <Grid
+                    Grid.Column="1"
+                    RowSpacing="0"
+                    RowDefinitions="*, *">
+                    <Image
+                        Source="loading.png"
+                        Style="{StaticResource RatingIconStyle}"
+                        HorizontalOptions="Center"
+                        Margin="10,10,10,0"/>
+                    <Label
+                        Grid.Row="1"
+                        Text="{Binding MovieLibrary.Status}"
+                        Style="{StaticResource InfoTitleStyle}"
+                        Margin="10,5,10,0"/>
+
+                </Grid>
+                <Grid
+                    Grid.Column="2"
+                    RowSpacing="0"
+                    RowDefinitions="*, *">
+                    <Image
+                        Source="calendar.png"
+                        Style="{StaticResource RatingIconStyle}"
+                        HorizontalOptions="Center"
+                        Margin="10,10,10,0"/>
+                    <Label
+                        Grid.Row="1"
+                        Text="{Binding MovieLibrary.StartDate}"
+                        Style="{StaticResource InfoTitleStyle}"
+                        Margin="0,5,0,0"/>
+                </Grid>
+                <Grid
+                    RowSpacing="0"
+                    RowDefinitions="*, *, *"
+                    Grid.Column="3">
+                    <Border
+                        Style="{StaticResource MetascoreStyle}">
+                        <Label
+                            Text="{Binding MovieLibrary.Metascore}"
+                            Style="{StaticResource MetascoreTextStyle}"/>
+                    </Border>
+                    <Label
+                        Grid.Row="1"
+                        Text="Metascore"
+                        Style="{StaticResource InfoTitleStyle}"
+                        Margin="0,5,0,0"/>
+                    <Label
+                        Grid.Row="2"
+                        Text="62 critic reviews"
+                        Style="{StaticResource InfoSubTitleStyle}"
+                        Margin="0,2,0,0"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             x:Class="Cinemate.Views.MovieSuggestionsPage"
+             xmlns:Component="clr-namespace:Cinemate.Views.Components"
+             Title="Movie suggestions"
+             BackgroundColor="#EEF5FF">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="AddButtonStyle" TargetType="Border">
+                <Setter Property="StrokeShape" Value="RoundRectangle 12" />
+                <Setter Property="StrokeThickness" Value="0" />
+                <Setter Property="BackgroundColor" Value="#9399C3" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>
+
+            <Style x:Key="AddButtonTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Path Grid.Row="0"
+              Data="M 211.5157012939453 506.2601013183594 L 211.5157012939453 154.91004943847656 L 652.75048828125 154.91004943847656 L 652.75048828125 500.3701171875 C 506.6836853027344 594.9873657226562 359.6053771972656 596.95068359375 211.5157012939453 506.2601013183594 Z"
+              Aspect="Fill" Fill="#9399C3" Stroke="#9399C3" Margin="0,0,0,-50"/>
+
+        <Frame Grid.Row="1" BackgroundColor="White" BorderColor="#9399C3" HasShadow="True" HeightRequest="680" Padding="0" Margin="10,-30,10,20" CornerRadius="20">
+            <ScrollView>
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+
+                    <!--Genre of movie-->
+                    <Grid Grid.Row="0" ColumnDefinitions="3*,2*" HorizontalOptions="Center" VerticalOptions="Start" Margin="10,30,10,0">
+                        <Label Grid.Column="0" Text="Genre of movie:" FontSize="15" FontAttributes="Bold" VerticalOptions="Center" Margin="-20,0,20,0"/>
+                        <Component:DropDown Grid.Column="1" HorizontalOptions="Fill" Options="{Binding GenreOptionsKeys}"
+                            SelectedOption="{Binding Genre}"/>
+                    </Grid>
+
+                    <!--Published in the last X years-->
+                    <Grid Grid.Row="1" ColumnDefinitions="3*,2*,1*" HorizontalOptions="Fill" VerticalOptions="Start" Margin="10,30,10,0">
+                        <Label Grid.Column="0" Text="Published in the last" FontSize="15" FontAttributes="Bold" VerticalOptions="Center"/>
+                        <Component:DropDown Grid.Column="1" HorizontalOptions="Fill" Options="{Binding NumberOptions}"
+                            SelectedOption="{Binding NoYearsPublished}" Margin="-10,0,0,0"/>
+                        <Label Grid.Column="2" Text="years." FontAttributes="Bold" VerticalOptions="Center" Margin="15,0,0,0"/>
+                    </Grid>
+
+                    <!--Number of suggestions-->
+                    <Grid Grid.Row="2" ColumnDefinitions="3*,2*" HorizontalOptions="Center" VerticalOptions="Start" Margin="10,30,10,0">
+                        <Label Grid.Column="0" Text="Number of suggestions:" FontSize="15" FontAttributes="Bold" VerticalOptions="Center" Margin="-20,0,20,0"/>
+                        <Component:DropDown Grid.Column="1" HorizontalOptions="Fill" Options="{Binding NumberOptions}"
+                            SelectedOption="{Binding NoSuggestions}"/>
+                    </Grid>
+
+                    <Grid
+                    Grid.Row="4"
+                    Margin="0,30,0,0">
+                          <Line X2="500" StrokeDashArray="4, 2" StrokeDashOffset="0"
+                          StrokeThickness="2.5" Stroke="#9399C3"
+                          HeightRequest="1"/>
+                        <Path Data="M 0 0 A 1 1 0 0 1 0 -2"
+                          Aspect="Fill" Stroke="#9399C3"
+                          Fill="#EEF5FF"
+                          WidthRequest="12.5" HeightRequest="25"
+                          HorizontalOptions="End"/>
+                        <Path Data="M 0 0 A 1 1 0 0 0 0 -2"
+                           Aspect="Fill" Stroke="#9399C3"
+                           Fill="#EEF5FF"
+                           WidthRequest="12.5" HeightRequest="25"
+                           HorizontalOptions="Start"/>
+                    </Grid>
+                    
+                    <!--Favorite movie(s)-->
+                    <Grid Grid.Row="3" RowDefinitions="*,*" HorizontalOptions="Fill" VerticalOptions="Start" Margin="10,40,10,0">
+                        <Label Grid.Row="0" Text="Favorite movie(s):" FontSize="15" FontAttributes="Bold" VerticalOptions="Center"/>
+                        <Frame Grid.Row="1" HeightRequest="200" WidthRequest="290" Padding="-5" Margin="0,15,0,0" BorderColor="{StaticResource Gray100}" BackgroundColor="Transparent" HasShadow="False" CornerRadius="5">
+                            <Editor Text="{Binding FavMovies}" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Placeholder="Enter you favorite movie(s)"/>
+                        </Frame>
+                    </Grid>
+
+                    
+                    <!--Get suggestions Button-->
+                    <!--<Button Grid.Row="4" Text="Get suggestions" Command="{Binding GetSuggestionsCommand}" BorderWidth="3" BorderColor="OrangeRed" BackgroundColor="Transparent" TextColor="OrangeRed" HorizontalOptions="Center" WidthRequest="200" Margin="0,20,0,0"/>-->
+                    <Border   Grid.Row="5"
+                              Margin="0,30,0,0"
+                            Style="{StaticResource AddButtonStyle}">
+                        <Label
+                                Text="Get suggestions"
+                                Style="{StaticResource AddButtonTextStyle}"/>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Command="{Binding GetSuggestionsCommand}"/>
+                        </Border.GestureRecognizers>
+                    </Border>
+
+                    <Label Grid.Row="6" TextColor="{StaticResource Gray300}" FontAttributes="Italic" Text="**This process may take a while. Please be patient." HorizontalTextAlignment="Start" Margin="20,25,0,0" />
+
+                </Grid>
+            </ScrollView>
+        </Frame>
+
+        <Path Grid.Row="2"
+              Data="M 0 0 L 300 0 L 300 50 C 250 55 150 55 100 50 C 50 45 0 45 0 50 L 0 0 Z"
+              Aspect="Fill" Fill="#9399C3" Stroke="#9399C3" Margin="0,0,0,-50" RotationX="180"/>
+    </Grid>
+</ContentPage>

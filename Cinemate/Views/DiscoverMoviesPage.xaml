@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cinemate.Views.DiscoverMoviesPage"
+             xmlns:Component="clr-namespace:Cinemate.Views.Components"
+             Title="Discover movies"             
+             BackgroundImageSource="background.jpg">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="AddButtonStyle" TargetType="Border">
+                <Setter Property="StrokeShape" Value="RoundRectangle 12" />
+                <Setter Property="StrokeThickness" Value="0" />
+                <Setter Property="BackgroundColor" Value="#9399C3" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>
+
+            <Style x:Key="AddButtonTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Path Grid.Row="0" Data="M 289.1919860839844 514.6589965820312 L 291.3925476074219 177.97134399414062 L 609.3753662109375 177.97134399414062 L 610.4756469726562 590.5787963867188 L 414.6246337890625 334.2120666503906 L 289.1919860839844 514.6589965820312 Z" 
+              Aspect="Fill" Fill="#9399C3" Stroke="#9399C3" HeightRequest="200" WidthRequest="520" Margin="0,-80,0,0"/>
+
+        <Frame Grid.Row="1" BackgroundColor="White" BorderColor="#9399C3" HasShadow="True" HeightRequest="440" Padding="0" Margin="10,-50,10,20" CornerRadius="20">
+            <ScrollView>
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+                    <!--Release year-->
+                    <Grid Grid.Row="0" ColumnDefinitions="3*,2*" HorizontalOptions="Center" VerticalOptions="Start" Margin="10,60,10,0">
+                        <Label Grid.Column="0" Text="Release year:" FontSize="15" FontAttributes="Bold" VerticalOptions="Center" Margin="-20,0,20,0"/>
+                        <Component:DropDown Grid.Column="1" HorizontalOptions="Fill" Options="{Binding ReleaseYears}" SelectedOption="{Binding ReleaseYear}"/>
+                    </Grid>
+
+                    <!--Genre of movie-->
+                    <Grid Grid.Row="1" ColumnDefinitions="3*,2*" HorizontalOptions="Center" VerticalOptions="Start" Margin="10,30,10,0">
+                        <Label Grid.Column="0" Text="Genre of movie:" FontSize="15" FontAttributes="Bold" VerticalOptions="Center" Margin="-20,0,20,0"/>
+                        <Component:DropDown Grid.Column="1" HorizontalOptions="Fill" Options="{Binding GenreOptionsKeys}" SelectedOption="{Binding Genre}"/>
+                    </Grid>
+
+                    <!--Sort by-->
+                    <Grid Grid.Row="2" ColumnDefinitions="3*,2*" HorizontalOptions="Center" VerticalOptions="Start" Margin="10,30,10,0">
+                        <Label Grid.Column="0" Text="Sort by:" FontSize="15" FontAttributes="Bold" VerticalOptions="Center" Margin="-20,0,20,0"/>
+                        <Component:DropDown Grid.Column="1" HorizontalOptions="Fill" Options="{Binding SortOptions}" SelectedOption="{Binding SortBy}"/>
+                    </Grid>
+
+                    <Grid Grid.Row="3" Margin="0,30,0,0">
+                        <Line X2="500" StrokeDashArray="4, 2" StrokeDashOffset="0" StrokeThickness="2.5" Stroke="#9399C3" HeightRequest="1"/>
+                        <Path Data="M 0 0 A 1 1 0 0 1 0 -2" Aspect="Fill" Stroke="#9399C3" Fill="#EEF5FF" WidthRequest="12.5" HeightRequest="25" HorizontalOptions="End"/>
+                        <Path Data="M 0 0 A 1 1 0 0 0 0 -2" Aspect="Fill" Stroke="#9399C3" Fill="#EEF5FF" WidthRequest="12.5" HeightRequest="25" HorizontalOptions="Start"/>
+                    </Grid>
+
+                    <!--Search Button-->
+                    <Border Grid.Row="4" Grid.RowSpan="2" Margin="0,40,0,20" Style="{StaticResource AddButtonStyle}">
+                        <Label Text="Search" Style="{StaticResource AddButtonTextStyle}"/>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GetMoviesCommand}"/>
+                        </Border.GestureRecognizers>
+                    </Border>
+                </Grid>
+            </ScrollView>
+        </Frame>
+
+        <Path Grid.Row="2"
+           Data="M 209.84213256835938 425.78448486328125 L 209.84213256835938 560.0194702148438 L 527.824951171875 560.0194702148438 L 527.824951171875 425.78448486328125 L 432.1000061035156 541.3146362304688 L 209.84213256835938 425.78448486328125 Z"
+           Aspect="Fill" Fill="#9399C3" Stroke="#9399C3"/>
+    </Grid>
+    
+</ContentPage>
